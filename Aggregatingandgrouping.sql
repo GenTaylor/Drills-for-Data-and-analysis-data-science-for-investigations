@@ -21,20 +21,21 @@ SELECT
 	count(trip_id) as "Number of Trips"
 FROM
 	trips
-group by 
+GROUP BY 
 	start_station;
 
 
 
 
 --What's the shortest trip that happened?
-select 
-	
-	min(duration)
-from
+
+SELECT
+
+	min(duration) AS "Shortest Trip"
+FROM
 	trips;
 
---Unsure if more detail was need. Answer was 60.
+--Unsure if more detail was needed. Answer was 60.
 
 
 
@@ -46,7 +47,8 @@ SELECT
 	AVG(duration) as "Average Trip Duration"
 FROM 
 	trips
-GROUP BY end_station;
+GROUP BY
+	end_station;
 
 
 
