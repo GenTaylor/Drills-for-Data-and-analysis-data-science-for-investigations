@@ -29,12 +29,9 @@ WHERE
 --The min temperatures of all the occurrences of rain in zip 94301.
 
 SELECT
-	mintemperaturef
+	mintemperaturef	
 FROM 
 	weather
 WHERE 
-	zip = 94301;
-	
-
-
+	zip = 94301 and events LIKE 'Rain';
 
